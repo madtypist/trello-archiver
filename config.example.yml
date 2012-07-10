@@ -1,0 +1,17 @@
+# You can get this info by going to:
+# https://trello.com/1/appKey/generate
+
+#Trello public key
+public_key: yourkeyhere 
+
+#Trello private key
+private_key: yourkeyhere
+
+# You can get the key by going to this url in your browser:
+# https://trello.com/1/connect?key=PUBLIC_KEY_FROM_ABOVE&name=MyApp&response_type=token&scope=read,write,account&expiration=never
+# Only request the permissions you need; i.e., scope=read if you only need read, or scope=write if you only need write. Comma separate scopes you need.
+# If you want your token to expire after 30 days, drop the &expiration=never.
+access_token_key: yourtokenhere
+
+#Set a collection of any board IDs you want to ignore
+ignore: [boardid1, boardid2]

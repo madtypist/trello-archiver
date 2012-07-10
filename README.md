@@ -1,4 +1,4 @@
 trello-archiver
 ===============
 
-Trello Archiver ruby script
+Program to automatically archive trello boards as Excel documents
