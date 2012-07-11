@@ -34,9 +34,9 @@ board = Board.find(boardarray[board_to_archive].id)
 
 if board_to_archive != -1
 	puts "Would you like to provide a filename? (y/n)"
-	response = gets.downcase
-
-	if response=="y"
+	response = gets.downcase.chomp
+  
+	if response.to_s =="y"
 		puts "Enter filename:"
 		filename = gets
 	else
