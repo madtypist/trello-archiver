@@ -26,8 +26,8 @@ me.boards.each do |board|
 	optionnum += 1
 end
 
+puts "0 - CANCEL\n\n"
 puts "Which board would you like to backup?"
-puts "0 - CANCEL"
 board_to_archive = gets.to_i - 1
 
 board = Board.find(boardarray[board_to_archive].id)
