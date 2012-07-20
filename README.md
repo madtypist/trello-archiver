@@ -13,3 +13,6 @@ There are two main scripts you can run. *backup.rb* is a command line program th
 
 ##Shoutouts
 Thanks to Jeremy Tregunna for writing the [ruby-trello library](https://github.com/jeremytregunna/ruby-trello) which made my life a lot easier.
+
+##Feedback?
+Hit me up at mad_typist[at]yahoo[dot]com
