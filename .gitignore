@@ -17,5 +17,6 @@ tmp
 _yardoc
 doc/
 archive/
+transform/
 .DS_Store
 config.yml
