@@ -1,6 +1,7 @@
 def versiononeformat(board, filenamestub="productbacklogbackup", includecomments=true)
   lists = board.lists
   filename = "transform/#{DateTime.now.strftime "%Y%m%dT%H%M"}_#{filenamestub}.xslx"
+  puts filename
   SimpleXlsx::Serializer.new(filename) do |doc|
     doc.add_sheet("Backlog Items") do |sheet|
       sheet.add_row(%w{AssetType Name Scope Description Estimate Priority})
@@ -11,7 +12,7 @@ def versiononeformat(board, filenamestub="productbacklogbackup", includecomments
           regex = /\[BUG\]/
           estimate_regex = /\((\w*)\)/
           cards.each do |card|
-            puts card.name.match regex
+            puts "#{card.name.match regex} Exporting card: #{card.name}"
             assettype = (card.name.match regex) ? "Defect" : "Story"
             estimate = (card.name =~ estimate_regex) ? $1 : ""
             sheet.add_row([assettype, card.name, "Engineering", card.description, estimate, ""])

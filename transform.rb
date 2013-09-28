@@ -40,7 +40,7 @@ if board_to_archive != -1
 
 	if response.to_s =="y"
 		puts "Enter filename:"
-		filename = gets
+		filename = gets.chomp
 	else
 		filename = board.name.parameterize
 	end
